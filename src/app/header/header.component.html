@@ -1,0 +1,40 @@
+<div class="header-image">
+  <h2>Hello</h2>
+  <div class="header-line">----------------------</div>
+  <p>Welcome to my website</p>
+</div>
+
+<div class="col-md-6 offset-2">
+  <ul class="nav">
+    <li class="hvr-shutter-out-horizontal"><a href="#">Menu số 1</a></li>
+    <li class="hvr-shutter-out-horizontal">
+      <a href="#">Menu số 2</a>
+      <ul class="sub-menu">
+        <li><a href="#">Menu số 2.1</a></li>
+        <li>
+          <a href="#">Menu số 2.2</a>
+          <ul class="sub-menu">
+            <li><a href="#">Menu số 2.2.1</a></li>
+            <li><a href="#">Menu số 2.2.2</a></li>
+            <li><a href="#">Menu số 2.2.3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Menu số 2.3</a></li>
+        <li><a href="#">Menu số 2.4</a></li>
+      </ul>
+    </li>
+    <li class="hvr-shutter-out-horizontal"><a href="#">Menu số 3</a></li>
+    <li class="hvr-shutter-out-horizontal"><a href="#">Menu số 4</a></li>
+    <li class="hvr-shutter-out-horizontal"><a href="#">Menu số 5</a></li>
+  </ul>
+
+
+
+  <div class="post">
+    <div *ngFor="let item of posts">
+      <app-item-post [itemPost]="item"></app-item-post>
+    </div>
+  </div>
+
+</div>
+
